@@ -72,3 +72,28 @@ void performSubtraction() {
     result = num1 - num2;
     printf("Result: %.2f - %.2f = %.2f\n", num1, num2, result);
 }
+
+// Function for multiplication
+void performMultiplication() {
+    double num1, num2, result;
+    printf("Enter two numbers to multiply: ");
+    scanf("%lf %lf", &num1, &num2);
+    result = num1 * num2;
+    printf("Result: %.2f * %.2f = %.2f\n", num1, num2, result);
+}
+
+// Function for division
+void performDivision() {
+    double num1, num2, result;
+    printf("Enter two numbers to divide : ");
+    scanf("%lf %lf", &num1, &num2);
+    if(num2 == 0){
+        printf("Error , cannot divide by zero");
+    }
+
+    else {
+        result = num1 / num2;
+        printf("Result: %.2f / %.2f = %.2f\n", num1, num2, result); 
+    }
+
+}
